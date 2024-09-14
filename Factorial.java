@@ -1,9 +1,9 @@
 public class Factorial {
 	public static void main(String args[]) {
-		System.out.println(factorial(3));
+		System.out.println(factorial(7));
 	}
 
-	public static int factorial(int number) {
+	public static Object factorial(int number) {
 		int result = 1;
 		if (number > 0) {
 			for (int i = number; i > 0; i--) {
@@ -11,9 +11,11 @@ public class Factorial {
 			} 
 			return result;
 		
+		} else if (number == 0) {
+			return 1;
 		} else {
-			return 0;
-	}
+			return "Недопустимое значение";
+		}	
 } 
 		
 }

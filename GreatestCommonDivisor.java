@@ -1,6 +1,6 @@
 public class GreatestCommonDivisor {
 	public static void main(String args[]) {
-		System.out.println();
+		System.out.println(gcd(18, 0));
 	}
 
 	public static int gcd(int a, int b) {
